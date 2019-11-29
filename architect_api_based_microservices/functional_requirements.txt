@@ -1,0 +1,10 @@
+autonomous microservices principle
+
+- loosely coupled (independent of other services)
+- independently interchangeable (should be able to change the internal workings of our microservices API and then slot it back into our microservices architecture without disrupting the functionality of our system)
+- independently deployable
+- support and honour contracts (contracts: basically all the input and outputs from that API. So it might be a no. of method calls the API provides and the parameters each one of those takes and in terms of output, it might be the responses that are delivered in response to a request that comes into the API. and by supporting and honouring the inputs and outputs without breaking.)
+- technology agnostic API.
+- stateless API (shouldn't have to remember any previous API interactions)
+
+all the above factors contribute to scaling of the microservices

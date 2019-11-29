@@ -1,0 +1,1 @@
+language that belongs to a specific domain function (bounded context). also used by all team members to connect all the activities of the team members with the software.

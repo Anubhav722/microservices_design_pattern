@@ -1,0 +1,18 @@
+REST is an architectural style that defines a number of no. constraints and those constraints are regarded as RESTful.
+
+- use HTTP based infrastructure (they should work a little bit like websites)
+- inherits advantages of the web
+- key concepts:
+-- JSON or XML (to send and receive data from REST API)
+-- resource endpoints
+-- uniform resource interface (allows to state, basically HTTP verbs, what type of operation i want to carry out, POST, PUT, GET, DELETE)
+
+constraints followed:
+- Client - server model (should be basically decoupled from the client)
+- stateless (API should be stateless)
+- cacheable
+- layered system (API can work within a layered system, means there might be other HTTP based b/w your server, between your API and the actual clients calling your API. these might be other web services or technologies like load balancers and caching servers which are part of the HTTP infrastructure that can help improve performance or responsiveness of your API.)
+- uniform interface:
+-- resources
+-- manipulation of resources from request
+-- self descriptive message

@@ -1,0 +1,4 @@
+request/response:
+- client calls service
+- service carries out task
+- client receives response

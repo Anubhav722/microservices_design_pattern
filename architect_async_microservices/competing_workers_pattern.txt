@@ -1,0 +1,12 @@
+message queuing pattern: competing workers pattern
+
+
+						   ------> service
+						  |
+client --> message broker |------> service
+						  |
+						  -------> service
+
+only one of the service picks up the message from the messaging broker.
+each service is competing for each message.
+when the load increases on the system (message broker), we scale out by increasing the number of consuming applications giving the ability to scale out and meet the requirements. removes single point of failure.

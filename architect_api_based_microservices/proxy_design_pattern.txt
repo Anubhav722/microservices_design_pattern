@@ -1,0 +1,21 @@
+
+- Placeholder for another object
+especially useful for API's that talk to other API's and need some kind of object to wrap the calls for that API.
+
+- Used to control access to other object
+
+- Other object could be an external API.
+
+- Proxy object doesn't contain much business logic. It's main responsibility is to wrap the object that it's remotely retrieving from an external API.
+
+(Proxy object is a wrapper which provides):
+-- Simplification (proxy object may contain logic within itself to simplify the overall use of the remote object). So when we handle a proxy object, it's like handling a local object.
+
+-- Transformation (proxy object may contain transformation logic within the actual object to convert any or cleanse any values retrieved from the remote API so that it makes more sense within the local proxy object to the local context of microservices.)
+
+-- Security (security details for accessing that API might also be included inside the proxy object)
+
+-- Validation (If data is sent back to the external API using the proxy object, the proxy object might also include some validation logic within itself to validate any new values that are being sent to the API.)
+
+
+Useful when especially microservices are designed to talk to other microservices and wrapping up certain calls to certain objects which belong to external API's and external microservices using a proxy object can sometimes simplify your logic within your API because all the complexities are hidden within the proxy object.

@@ -1,0 +1,11 @@
+api architectural styles:
+- pragmatic REST style - (satisfies nearly all microservices functional requirements) (by pragmatic we mean more refined and slightly extended version of REST which is more suitable for microservices API's .)
+- HATEOS (extended version of REST (TRUE REST)) - very difficult to implement and very impractical to use at an architectural level.
+- RPC 
+- SOAP
+
+API architectual patterns:
+- facade pattern
+- proxy pattern
+- stateless service pattern
+  

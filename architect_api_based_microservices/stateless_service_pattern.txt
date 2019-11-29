@@ -1,0 +1,18 @@
+the patterns are not keeping states within the service between calls.
+
+An example of a stateful service would be a service that uses the session facilities at the server end and provides a session id in order to keep a track of states between calls made to the service.
+
+STATEFUL SERVICES:
+- avoid for microservices
+
+Stateless Service Pattern:
+- no state information maintained. (between requests no data related to requests must be held in memory at the server end.)
+- Clients maintain state. (state of the request)
+- State sent as part of the request.
+
+ADVANTAGES FOR MICROSERVICES ARCHITECTURE:
+- Scalability; performance and availability
+
+
+DISADVANTAGE:
+- Increases network traffic; (because each request now contains more data which describes the overall transaction in the request state and this needs to be transmitted across network.)

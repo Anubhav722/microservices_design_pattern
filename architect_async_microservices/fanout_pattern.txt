@@ -1,0 +1,13 @@
+message queuing pattern: fanout pattern
+
+							-------> service task 1
+							|
+client ----> message broker |------> service task 2
+							|
+							--------> service task 3
+
+
+in this pattern, instead of being consumed by one type of consumer, it's consumed by all consumers listening to that specific queue. (service will be performing different tasks)
+this type of event allows us to raise one event and trigger several tasks in response to raising that event.
+
+it allows our microservices architecture to trigger several different tasks in response to one event happening.

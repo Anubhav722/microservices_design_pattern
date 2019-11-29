@@ -1,0 +1,9 @@
+why async microservices?
+- fire and forget interactions (don't need the result of the task rightaway.)
+- long running jobs
+- decoupled client and service
+- overall better performance. components don't have to wait for each other.
+
+how?
+- event based: where the client's application doesn't directly call the service or API but places a task in the form of a message, or a mechanism where the service will be listening and eventually the service will pick the message up from that mechanism and process it as a task.
+- async API calls: 

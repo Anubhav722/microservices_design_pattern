@@ -1,0 +1,10 @@
+- competive software
+
+what is micro?
+
+
+bounded context for scope:
+- domain driven design
+- eric events
+- strategic design pattern
+- tool for the whole process

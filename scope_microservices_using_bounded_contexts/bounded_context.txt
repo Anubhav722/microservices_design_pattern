@@ -1,0 +1,5 @@
+a specific responsibiliity enforced by an explicit boundary.
+
+starts off as a core domain concept to serve a single purpose:
+
+ex. delivery, driver, customer orders.

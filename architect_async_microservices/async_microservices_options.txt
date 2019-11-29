@@ -1,0 +1,8 @@
+event based:
+- transaction/action as an event
+- message using messaging queues.
+- decouples client from the server.
+- queueing patterns
+
+async API calls:
+- request/acknowledge using callbacks. (we don't wait for the actual response, instead we get a default response. we register a callback to the service)

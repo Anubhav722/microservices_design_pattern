@@ -1,0 +1,3 @@
+software that models real-world domains
+
+- domain experts and software developers to work together.

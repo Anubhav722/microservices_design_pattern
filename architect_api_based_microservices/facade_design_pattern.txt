@@ -1,0 +1,56 @@
+design patterns that help in the implementation of the microservices API.
+
+____________________
+|					|
+|	Ifacade			|
+|					|
+|API				|
+_____________________
+
+
+_____________________
+|					|
+|	Facade			|
+|					|
+| Business			|
+---------------------
+
+_____________________
+|					|
+|					|
+|					|
+| Data				|
+---------------------
+
+
+Internally the service has a layered architecture. It has a data layer to access the database, it has a business layer for business related logic, and it has a API layer at the top which basically contains all the technology to enable the microservice and act like an API. So in this API, we the facade design pattern to provide an interface to all business logic.
+
+
+- A single interface to subsystems. Used to keep the business logic separate from the API logic and instead the API logic just deals directly with the facade object in order to access the subsystem functionality business layer. The actual implementation of the facade object might actually live within the business layer, and we might use dependency injection and an interface to inject the implementation of the facade into the API layer.
+
+- Each subsystem represented by a class within the business layer.
+
+- API objects honoured by the facade.
+
+- Microservice API is just a facade.
+-- Business logic live behind the facade.
+-- Helps with information hiding. (information that is not relevant to our API's interface.)
+-- Shared models; At the API level, we might have a set of shared models, which are part of the API's contract which are used by the clients. The facade helps us separate these from the internal models within the business layer by enabling us to hide the information within the business layer and have shared models which are used separately at the API level.
+- decoupling; helps decouple our internal business logic from the actual API functionality by keeping the models separate and by keeping the API level technical functionality separate from the business level functionality which lives within the business layer.
+
+Facade helps enforce design principles:
+- Single cohesion
+
+APPROACH TO THE API FACADE DESIGN PATTERN:
+1. Design the API
+-- endpoints
+-- parameters
+-- responses
+-- status codes
+
+2. Mock the API for consumer testing
+-- Facade that returns hardcoded
+--- responses
+
+3. Revise and implement the actual facade
+-- Using feedback from 2.

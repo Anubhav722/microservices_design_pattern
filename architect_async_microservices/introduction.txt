@@ -1,0 +1,6 @@
+event based:
+- competing workers pattern
+- fanout pattern
+
+async api calls:
+- request/acknowledge with callback
